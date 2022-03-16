@@ -24,7 +24,7 @@ export const Header = () => {
 
   return (
     <>
-        <nav className={ " fixed top-0 w-full flex items-center bg-green-100 p-2 flex-wrap"}>
+        <nav className={ "z-20 bg-opacity-30 fixed top-0 w-full flex items-center bg-green-100 p-2 flex-wrap"}>
           <a to="#" className=" px-2 mr-4 inline-flex items-center">
             <span className="text-4xl font-bold uppercase tracking-wide" data-target="#navigation">E-Ponics</span>
           </a>

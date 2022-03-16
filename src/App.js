@@ -4,7 +4,7 @@ import { Home } from "./containers/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-background-801">
       <Header/>
       <Home/>
     </div>
