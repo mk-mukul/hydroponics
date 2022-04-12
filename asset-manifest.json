@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/hydroponics/static/css/main.1a09db3b.css",
-    "main.js": "/hydroponics/static/js/main.022e7354.js",
+    "main.css": "/hydroponics/static/css/main.a36bafeb.css",
+    "main.js": "/hydroponics/static/js/main.c5f94e54.js",
     "static/js/787.f1123840.chunk.js": "/hydroponics/static/js/787.f1123840.chunk.js",
+    "static/media/Mukul.jpeg": "/hydroponics/static/media/Mukul.c76fddff95face27ab70.jpeg",
     "static/media/home.jpg": "/hydroponics/static/media/home.06aecbda0fd078a17663.jpg",
+    "static/media/home2.jpg": "/hydroponics/static/media/home2.c802a14693b37851efa2.jpg",
+    "static/media/Pearl.jpg": "/hydroponics/static/media/Pearl.a9ecd647acbd785507a6.jpg",
+    "static/media/Veena.jpeg": "/hydroponics/static/media/Veena.fc14d98ea3e1efa94bf0.jpeg",
+    "static/media/Rahul.jpg": "/hydroponics/static/media/Rahul.71fb1779690b616f6e7e.jpg",
     "index.html": "/hydroponics/index.html",
-    "main.1a09db3b.css.map": "/hydroponics/static/css/main.1a09db3b.css.map",
-    "main.022e7354.js.map": "/hydroponics/static/js/main.022e7354.js.map",
+    "main.a36bafeb.css.map": "/hydroponics/static/css/main.a36bafeb.css.map",
+    "main.c5f94e54.js.map": "/hydroponics/static/js/main.c5f94e54.js.map",
     "787.f1123840.chunk.js.map": "/hydroponics/static/js/787.f1123840.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a09db3b.css",
-    "static/js/main.022e7354.js"
+    "static/css/main.a36bafeb.css",
+    "static/js/main.c5f94e54.js"
   ]
 }
