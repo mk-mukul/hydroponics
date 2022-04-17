@@ -53,7 +53,7 @@ const TeamContainer = (props) => {
     return (<>
         <div className="team-container">
             <h2 className="team-heading text-6xl font-medium">Our Team</h2>
-            <div className='grid grid-cols-3 w-full'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full'>
                 {
                     data.map((val, ind) => {
                         // console.log(val.position)

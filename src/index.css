@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 .card {
     width: auto;
@@ -48,20 +49,22 @@
     color: white;
     padding-top: 0;
 }
+
 .team-heading{
     width: 100%;
     display: grid;
     justify-content: center;
 }
+
 .team-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 1.6rem 0;
 }
+
 .card-body .contact:hover {
     transition: all .3s ease;
     transform: translateY(-5px);
     display: inline-block;
 }
-
