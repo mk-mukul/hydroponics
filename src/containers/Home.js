@@ -34,21 +34,43 @@ export const Home = () => {
 
 
 const Calc = () => {
-    const crops = ["crop1", "crop2", "crop3", "crop4"];
-    const data = [];
-    const crop = {
-        crop : "Crop1",
-        time : 1,
-        price : 4,
-        nutrients : 5
-    };
+    const data = [
+        {
+            crop : "Tomato",
+            time : 2,
+            price : 6,
+            nutrients : 1
+        },
+        {
+            crop : "Lettuce",
+            time : 1,
+            price : 45,
+            nutrients : 2
+        }
+    ];
+    
+    const [crop, setCrop] = useState({
+        crop : "",
+        time : 0,
+        price : 0,
+        nutrients : 0
+    });
     const [holeNo, setHoleNo] = useState(0);
     const [price, setPrice] = useState(0);
     useEffect(() => {
         if (holeNo < 0) {
             setHoleNo(0);
         } else {
-            setPrice(crop.price*holeNo);
+            const e = document.getElementById("selectList");
+            var value = e.options[e.selectedIndex].value;
+            for (let i = 0; i < data.length; i++) {
+                const element = data[i];
+                if (element.crop == value) {
+                    setCrop(element);
+                    setPrice(holeNo*element.price)
+                }
+            }
+            
         }
     }, [holeNo])
 
@@ -58,9 +80,9 @@ const Calc = () => {
 
             <div className="mb-1 text-sm">Select your crop</div>
             <select className="mb-2 py-1 px-2 border-2 max-w-xs rounded-md bg-gray-50 border-gray-400 focus:border-green-900" name="selectList" id="selectList">
-                {crops.map((val,ind) => {
+                {data.map((val,ind) => {
                     return (
-                        <option value={12} key={ind}>{val}</option>
+                        <option value={val.crop} key={ind}>{val.crop}</option>
                     )
                 })}
             </select>
@@ -80,7 +102,7 @@ const Calc = () => {
             <div className="mb-2 mt-2 text-lg"> Output </div>
             <div className="mb-2">Time taken = {crop.time} months</div>
             <div className="mb-2">Output price = {price} Rs.</div>
-            <div className="mb-2">Nutrients requirements = {crop.time}</div>
+            <div className="mb-2">Nutrients requirements = <a className="text-red-900" href="https://www.amazon.in/GreenLoop-Pure-Hydroponic-Nutrients-LEAFY-200/dp/B078BHP7YC/ref=asc_df_B078BHP7YC/?tag=googleshopdes-21&linkCode=df0&hvadid=396988257276&hvpos=&hvnetw=g&hvrand=15019462066470790213&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9300947&hvtargid=pla-404894960294&ext_vrnc=hi&th=1" target="_blank">Click Here</a></div>
         </>
     )
 }
