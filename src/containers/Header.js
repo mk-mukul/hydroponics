@@ -42,9 +42,9 @@ export const Header = () => {
               <Link to={process.env.PUBLIC_URL + "/about"} className="lg:inline-flex lg:w-auto px-3 py-2 rounded font-medium text-white hover:text-dark-801 hover:bg-primary-101">
                 <span>About</span>
               </Link>
-              <Link to={process.env.PUBLIC_URL + "/teams"} className="lg:inline-flex lg:w-auto px-3 py-2 rounded font-medium text-white hover:text-dark-801 hover:bg-primary-101">
+              {/* <Link to={process.env.PUBLIC_URL + "/teams"} className="lg:inline-flex lg:w-auto px-3 py-2 rounded font-medium text-white hover:text-dark-801 hover:bg-primary-101">
                 <span>Team</span>
-              </Link>
+              </Link> */}
               {/* <NavLink  to={process.env.PUBLIC_URL + "/inbox/"} params={{ data: props.user_name }} className="lg:inline-flex lg:w-auto px-3 py-2 rounded font-medium text-green-900 hover:text-dark-801 hover:bg-primary-101">
                 <span>Inbox</span>
               </NavLink>

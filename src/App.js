@@ -19,7 +19,7 @@ function App() {
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
         <Route exact path={process.env.PUBLIC_URL + "/status"} component={Status} />
-        <Route exact path={process.env.PUBLIC_URL + "/teams"} component={Teams} />
+        {/* <Route exact path={process.env.PUBLIC_URL + "/teams"} component={Teams} /> */}
       </Switch>
       <Footer/>
     </Router>
